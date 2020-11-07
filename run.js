@@ -1,3 +1,9 @@
+
+var button = document.querySelector("#button")
+var email = document.querySelector("#email")
+var regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
+
+
 async function send(email){
     let response = await fetch('https://pushpendrahpx.herokuapp.com/api/test',{
         method:"POST",
@@ -12,12 +18,17 @@ async function send(email){
     let result = await response.json();
     if(result && result.message){
         alert(result.message)
-        window.location.reload()
+        
+        button.disabled = true
+
+        button.style.background = "white"
+        button.style.color = "black"
+        button.innerHTML = "Subscribed"
+    }else{
+        alert("Some Error at Server")
     }
 }
-var button = document.querySelector("#button")
-var email = document.querySelector("#email")
-var regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
+
 button.addEventListener("click",(d)=>{
     let check = regex.test(String(email.value))
     if(check === true){
