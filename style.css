@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     font-weight: 200;
+    color: #fff;
 }
 
 body {
-    background-color: #ffffff;
+    /* font-family: "cotham"; */
+    background-color: #313131;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    /* background-color: #ffffff; */
 }
 
 nav {
@@ -22,6 +26,8 @@ nav {
 }
 
 nav .logo {
+    cursor: pointer;
+    transform: translate(10px,0);
     user-select: none;
     height: 100%;
 }
@@ -30,7 +36,9 @@ nav .logo-title {
     height: 64px;
     display: grid;
     place-content: center;
-    font-size: 18px;
+    font-size: 28px;
+    color: #fff;
+    cursor: text;
     font-weight: 400;
     position: relative;
 }
@@ -44,11 +52,10 @@ nav .logo-icon img {
     width: 48px;
     border-radius: 50%;
     padding: 0px;
-    border: 1px solid #5827b0;
+    border: 1px solid #fff;
     padding: 2px;
 }
 
-nav .hamburger {}
 
 nav .actions {
     display: flex;
@@ -58,31 +65,94 @@ nav .actions {
     justify-content: center;
 }
 
-nav .actions>div {
+nav .actions>div , nav .actions a{
     display: grid;
+    font-weight: 400;
     place-content: center;
     padding: 10px;
     height: 32px;
     align-self: center;
     text-align: center;
     cursor: pointer;
+    transition-duration: 0.4s;
+    padding:10px;
+    margin-right: 10px;
 }
 
 nav .actions>div:hover {
+    border-radius:  100px;
     background-color: #fafafa;
+    color:black;
+}
+nav .actions a{
+    text-decoration: none;
+}
+nav .actions a:hover{
+    color:black;
 }
 
 .main_section {
     width: 100%;
-    height: calc(100% - 75px);
-    display: grid;
-    place-content: center;
+    text-align: center;
+    /* height: calc(100% - 75px); */
+    /* display: grid;
+    place-content: center; */
 }
-
+.main_section > .hello{
+    font-size: 48px;
+}
+.main_section > .hello .info-3 {
+    color:#dedede;
+    font-size: 32px;
+}
 nav .hamburger {
     display: none;
 }
+.tech{
+    font-size: 26px;
+}
+.subscribe{
+    top:20px;
+    position: relative;
+    font-size: 28px;
+}
+.subscribe > input, .subscribe > button{
+    padding:8px;
+    outline:0;
+    font-size: 20px;
+    padding-left:20px;
+    padding-right:20px;
 
+    margin:10px;
+    color:#000;
+    border:0;
+    width:280px;
+    border-radius: 50px;
+}
+.subscribe > button{
+    cursor: pointer;
+    background-color: transparent;
+    width: auto;
+    transition-duration: 0.2s;
+    border:2px solid white;
+    color: white;
+    box-shadow: none;
+    padding:10px;
+    width: 140px;
+}
+.subscribe > button:hover{
+    box-shadow:  0 0 5px white;
+    color: black;
+    background-color: white;
+}
+.icons > img{
+    width: 128px !important;
+    height: 128px !important;
+}
+.subscribe > input:focus{
+    
+    box-shadow: 0 0 0 4px grey,0 0 0 6px white;
+}
 @media screen and (max-width:720px) {
     nav .actions {
         display: none;
