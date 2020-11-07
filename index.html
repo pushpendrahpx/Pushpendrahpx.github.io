@@ -8,7 +8,7 @@
     <link href="style.css" rel="stylesheet" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
-  
+    <script async src='run.js'></script>
 </head>
 <body ng-app ng-init="username='pushpendrahpx';name='Pushpendra Vishwakarma'">
     <nav style="max-width:80%;margin:0 auto;position: sticky;background-color: #313131;z-index:2">
@@ -41,8 +41,8 @@
             </div>
             <div class="subscribe">
                 <h5>Subscribe for Updates 🔔</h5>
-                <input type="text" placeholder="Email ID" />
-                <button>Subscribe</button>
+                <input type="text" placeholder="Email ID" id='email' />
+                <button id='button'>Subscribe</button>
             </div>
             <br />
             <div class="tech">
