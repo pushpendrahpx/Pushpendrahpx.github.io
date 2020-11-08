@@ -38,3 +38,7 @@ button.addEventListener("click",(d)=>{
     }
     
 })
+
+document.querySelectorAll("img").forEach(each=>{
+    each.setAttribute("draggable","false");
+})
