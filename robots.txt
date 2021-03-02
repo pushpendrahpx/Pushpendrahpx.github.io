@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://pushpendrahpx.github.io/sitemap.xml
+Host: https://pushpendrahpx.github.io

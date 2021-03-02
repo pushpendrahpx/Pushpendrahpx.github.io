@@ -1,0 +1,142 @@
+
+<!-- 
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <meta name="theme-color" content="#ffffff"/>
+        <title>
+            I'm HTML
+        </title>
+    </head>
+    <body>
+        <nav>
+            <div class="left">
+                <div class="logo"></div>
+            </div>
+            <div class="right">
+                <div class="hamburger">Hamburger</div>
+                <div class="options">
+                    <div>intro</div>
+                    <div>docs</div>
+                    <div>features</div>
+                    <div>devs</div>
+                </div>
+            </div>
+        </nav>
+        <div class="isSomethingVillain" id="isSomethingVillain" style="padding:10px;">
+            <span class="html" style="font-size: 48px;"> Hey listen, there's a story 📒!! </span>
+            <span style="font-size: 32px;padding: 10px;"> wanna read ?? Scroll now 1 </span> </span>
+        </div>
+        <div class="main" id="intro">
+            <span class="html">HTML says</span>
+            <span style="display: flex;">I <div id='myrotate'>❤️</div> CSS</span>
+        </div>
+        <div class="why" id="why" style="padding:10px;">
+            <span class="html">but why CSS??</span>
+            <span style="font-size: 32px;padding: 10px;">Because, Only CSS makes HTML beautiful, at the most fundamental level, CSS is the only one, there are some other options SCSS, SASS but no one can replace it 🤭</span>
+        </div>
+        <div class="isSomethingVillain" id="isSomethingVillain" style="padding:10px;">
+            <span class="html"> and what next?? 🧐 </span>
+            <span style="font-size: 32px;padding: 10px;">There something cool was yet to happen, but what ?</span>
+        </div>
+        <div class="isSomethingVillain" id="isSomethingVillain" style="padding:10px;">
+            <span class="html" style="font-size: 48px;"> There was some one named upop and one CSS 🧐 </span>
+            <span style="font-size: 32px;padding: 10px;"> Exploration happened and its still continuing ... <br /><br />
+            <br /><br /><span> wait, this is not the end, a lot to happen after this one 😋... </span> </span>
+        </div>
+    </body>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        :root{
+            --dark-bg: #333333;
+        }
+        *{ 
+            margin: 0;
+            padding: 0;
+            color:#fff;
+        }
+        body{
+            width: 100%;
+            background-color: var(--dark-bg);
+        }
+        nav{
+            display: flex;
+            padding:10px;
+            box-shadow: 0 0 5px #000;
+        }
+        nav > .left{
+            display: flex;
+            left:0;
+        }
+        nav > .left > .logo{
+            font-size: 32px;
+            font-weight: 200;
+            text-transform: capitalize;
+        }
+        nav > .left > .logo::before{
+            content: 'HTML';
+        }
+        nav > .right{
+            display: none;
+            position: absolute;
+            right: 0px;
+        }
+        nav > .right > .options{
+            display: flex;
+            margin-right: 20px;
+        }
+        .options > div{
+            cursor: pointer;
+            text-transform: capitalize;
+            padding:10px;
+            font-size: 16px;
+            transition-duration: 0.2s;
+        }
+        .options > div:hover{
+            background: #222222;
+        }
+        .hamburger{
+            display: none;
+        }
+        .main,.why,.isSomethingVillain{
+            font-size: 84px;
+            display: grid;
+            place-content: center;
+            height: calc(100vh - 58px);
+            border-bottom: 1px solid #000;
+        }
+        .main > .html{
+            font-size: 32px;
+        }
+        .main > .html::after{
+            content:','
+        }
+        .why,.isSomethingVillain{
+            height: 100vh;
+
+        }
+        @keyframes some{
+            0%{
+                transform: rotate(0deg)
+            }
+            25%{
+                transform: rotate(90deg)
+            }
+            50%{
+                transform: rotate(180deg)
+            }
+            75%{
+                transform: rotate(270deg)
+            }
+            100%{
+                transform: rotate(360deg)
+            }
+        }
+        #myrotate{
+            animation: some 2s infinite;
+        }
+        #myrotate:hover{
+            transform: scale(1.1)
+        }
+    </style> -->
