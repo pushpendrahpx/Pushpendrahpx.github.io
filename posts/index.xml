@@ -9,14 +9,15 @@
       <link>https://pushpendrahpx.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Jul 2021 00:44:38 +0530</lastBuildDate><atom:link href="https://pushpendrahpx.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jul 2021 00:44:38 +0530</lastBuildDate><atom:link href="https://pushpendrahpx.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Firstpost</title>
-      <link>https://pushpendrahpx.github.io/posts/firstpost/</link>
-      <pubDate>Mon, 19 Jul 2021 00:44:38 +0530</pubDate>
+      <title>Why State management solutions for Web Apps ?</title>
+      <link>https://pushpendrahpx.github.io/posts/post1/</link>
+      <pubDate>Sun, 25 Jul 2021 00:44:38 +0530</pubDate>
       
-      <guid>https://pushpendrahpx.github.io/posts/firstpost/</guid>
-      <description></description>
+      <guid>https://pushpendrahpx.github.io/posts/post1/</guid>
+      <description>In old days we see that websites were not that much evolved. I would say Web Applications are just an evolved website, which uses somewhat more JS for making Websites more &amp;amp; more Interactive.
+And as providing users a better User Experience, there is need of managing data at clients browser. I would like to take example of React, but somewhat same thing applies to other Front-end frameworks, like Angular or Vue.</description>
     </item>
     
   </channel>
